@@ -1,3 +1,7 @@
+<div align="center">
+<img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/multipass_react_sample/tes-2.png" width="30%" height="30%" alt="bar"/>
+</div>
+
 # Menjalankan Reactjs dalam Server Ubuntu Multipass
 
 Kali ini saya akan menjalankan web reactjs di dalam Server Ubuntu lokal melalui multipass. Pada dasarnya cara install reactjs di server ubuntu melalui multipass sama dengan ketika kita install reactjs di Ubuntu Desktop.
@@ -54,5 +58,7 @@ $ npm start
 ```
 
 Untuk mencobanya, kita bisa langsung akses de dalam PC kita dengan cara akses IP dari server ubuntu. Contoh IPnya seperti gambar di bawah ini:
-
+<div>
+<img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/multipass_react_sample/tes-1.png" width="30%" height="30%" alt="bar"/>
+</div>
 Sekian. Terima kasih.
