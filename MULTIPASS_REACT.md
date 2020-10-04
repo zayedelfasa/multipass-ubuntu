@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/multipass_react_sample/tes-2.png" width="30%" height="30%" alt="bar"/>
+<img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/multipass_react_sample/tes-2.png" width="50%" height="50%" alt="bar"/>
 </div>
 
 # Menjalankan Reactjs dalam Server Ubuntu Multipass
@@ -59,6 +59,6 @@ $ npm start
 
 Untuk mencobanya, kita bisa langsung akses de dalam PC kita dengan cara akses IP dari server ubuntu. Contoh IPnya seperti gambar di bawah ini:
 <div>
-<img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/multipass_react_sample/tes-1.png" width="30%" height="30%" alt="bar"/>
+<img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/multipass_react_sample/tes-1.png" width="50%" height="50%" alt="bar"/>
 </div>
 Sekian. Terima kasih.
