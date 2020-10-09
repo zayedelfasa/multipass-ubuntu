@@ -18,6 +18,9 @@ Ketika sudah selesai di-download, kita perlu tambahkan Sistem Operasi Ubuntu. Ca
 $ multipass launch --name ubuntu-riset
 ```
 
+<div>
+<img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/main_readme/main-1.png" width="50%" height="50%" alt="bar"/>
+</div>
 Perintah tersebut akan menambahkan satu image ubuntu yang bernama "ubuntu-riset". Perlu waktu ketika menjalankan perintah ini karena image di-download.
 
 Setelah selesai download, Ubuntu server tersebut secara otomatis dibuat dan sudah siap digunakan. Cara untuk melihat image Ubuntu tersebut, kita dapat menjalankan perintah di bawah ini : 
@@ -25,6 +28,10 @@ Setelah selesai download, Ubuntu server tersebut secara otomatis dibuat dan suda
 ```
 $ multipass list
 ```
+
+<div>
+<img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/main_readme/main-2.png" width="50%" height="50%" alt="bar"/>
+</div>
 
 Perintah tersebut akan menampilkan list image yang sudah kita buat. 
 
@@ -35,6 +42,10 @@ Setelah itu, apabila kita ingin mencoba untuk menjalankan perintah pada server t
 $ multipass exec ubuntu-riset -- ls -la
 ```
 
+<div>
+<img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/main_readme/main-3.png" width="50%" height="50%" alt="bar"/>
+</div>
+
 Perintah tersebut akan memberikan perintah pada server ubuntu buatan kita untuk menampilkan semua file dan folder yang ada pada lokasi home. Anda bisa mengganti perintah linux ubuntu yg lainnya setelah tanda "--" di atas.
 
 Agar kita bisa masuk ke dalam server ubuntu yang telah kita buat, kita dapat menggunakan perintah ini :
@@ -42,6 +53,10 @@ Agar kita bisa masuk ke dalam server ubuntu yang telah kita buat, kita dapat men
 ```
 $ multipass shell ubuntu-riset 
 ```
+
+<div>
+<img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/main_readme/main-4.png" width="50%" height="50%" alt="bar"/>
+</div>
 
 Setelah kita menjalankan perintah tersebut, maka kita telah masuk ke dalam sistem ubuntu. Di sinilah Anda bisa melakukan otak-atik server. 
 
