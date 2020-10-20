@@ -27,3 +27,29 @@ $ sudo tar xvf dotnetcore-3.1.tar.gz -C /opt/.netcore
 
 ### Menjalankan .NET Core
 
+.NET Core dapat dijalankan dengan perintah `dotnet` dengan syarat binary-nya sudah dikenali oleh environment shell dari ubuntu. Cara untuk dikenalinya dapat menjalankan perintah sebagai berikut: 
+```
+$ export PATH=/opt/.netcore:$PATH
+```
+
+Setelah itu silahkan untuk coba menjalankan perintah `dotnet`.
+```
+$ dotnet
+```
+
+Jika berhasil maka akan keluar info seperti di bawah ini: 
+```
+Usage: dotnet [options]
+Usage: dotnet [path-to-application]
+
+Options:
+  -h|--help         Display help.
+  --info            Display .NET Core information.
+  --list-sdks       Display the installed SDKs.
+  --list-runtimes   Display the installed runtimes.
+
+path-to-application:
+  The path to an application .dll file to execute.
+```
+
+### Menjalankan contoh API yang dibuat menggunakan .NET Core.
