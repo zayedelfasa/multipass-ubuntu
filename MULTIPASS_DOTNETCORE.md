@@ -51,5 +51,16 @@ Options:
 path-to-application:
   The path to an application .dll file to execute.
 ```
+Agar perintah `dotnet` tetap bisa dijalankan ketika ubuntu dihidupkan kembali, maka perlu lakukan export pada file `~/.bashrc`.
+
+Caranya sebagai berikut: 
+```
+$ sudo vim ~/.bashrc
+```
+Kemudian baris paling bawah tambahkan perintah seperti di bawah ini : 
+```
+export PATH=/opt/.netcore:$PATH
+```
+
 
 ### Menjalankan contoh API yang dibuat menggunakan .NET Core.
