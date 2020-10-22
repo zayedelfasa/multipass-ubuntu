@@ -8,29 +8,41 @@ Kali ini saya akan menjalankan .NET core dan deploy contoh API yang dibuat pada 
 https://github.com/zayedelfasa/multipass-ubuntu
 
 Jika dua persyaratan di atas telah dipenuhi, kita akan melanjutkan step yang berikutnya yaitu menjalankan SDK .NET core pada ubuntu multipass.
+Pada tutorial kali ini, saya akan menggunakan .NET core versi 2.1.
 
-1. Instal .NET Core di linux. 
-Pertama kita perlukan adalah SDK dari .NET Core yang bisa di download dengan menggunakan curl. Kita asumsikan, saat ini kita sudah berada di dalam ubuntu. Untuk download SDK .NET Core, kita bisa download dengan menggunakan perintah curl. 
+Sebelum melakukan instalasi .NET Core kita perlu register `Microsoft key` menjadi sebuah repository di dalam ubuntu kita, kemudian install dependecies lain yang dibutuhkan. Perintahnya sebagai berikut : 
+
 ```
-$ curl -o dotnetcore-3.1.tar.gz https://download.visualstudio.microsoft.com/download/pr/fdd9ecec-56b4-40f4-b762-d7efe24fc3cd/ffef51844c92afa6714528e10609a30f/dotnet-sdk-3.1.403-linux-x64.tar.gz
+$ wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
+$ sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
+$ wget -q https://packages.microsoft.com/config/ubuntu/18.04/prod.list 
+$ sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
+$ sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
+$ sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
+```
+### Install .NET Core 2.1
+
+Setelah melakukan register, langkah selanjutnya adalah instalasi .NET Coew 2.1. Langkahnya sebegai berikut:
+
+```
+$ sudo apt-get install apt-transport-https
 ```
 
-2. Setelah selesai download, langkah selanjutnya adalah membuat folder untuk lokasi SDK di ubuntu.
+Kemudian update
 ```
-$ sudo mkdir /opt/.netcore/ 
+$ sudo apt-get update
 ```
 
-kemudian extrak
+Setelah itu install .NET Core 2.1
 ```
-$ sudo tar xvf dotnetcore-3.1.tar.gz -C /opt/.netcore
+$ sudo apt-get install aspnetcore-runtime-2.1
+$ sudo apt-get install dotnet-sdk-2.1
 ```
 
 ### Menjalankan .NET Core
 
-.NET Core dapat dijalankan dengan perintah `dotnet` dengan syarat binary-nya sudah dikenali oleh environment shell dari ubuntu. Cara untuk dikenalinya dapat menjalankan perintah sebagai berikut: 
-```
-$ export PATH=/opt/.netcore:$PATH
-```
+.NET Core dapat dijalankan dengan perintah `dotnet` dengan syarat binary-nya sudah dikenali oleh environment shell dari ubuntu. 
+Apabila kita sudah melakukan instalasi seperti langkah di atas, maka perintah `dotnet` dapat langsung dikenali.
 
 Setelah itu silahkan untuk coba menjalankan perintah `dotnet`.
 ```
@@ -51,16 +63,37 @@ Options:
 path-to-application:
   The path to an application .dll file to execute.
 ```
-Agar perintah `dotnet` tetap bisa dijalankan ketika ubuntu dihidupkan kembali, maka perlu lakukan export pada file `~/.bashrc`.
 
-Caranya sebagai berikut: 
+Untuk lebih jelas dari .NET Core yang telah terinstall pada Ubuntu Anda, dapat menggunakan perintah di bawah ini: 
 ```
-$ sudo vim ~/.bashrc
+$ dotnet --info
 ```
-Kemudian baris paling bawah tambahkan perintah seperti di bawah ini : 
 ```
-export PATH=/opt/.netcore:$PATH
-```
+.NET Core SDK (reflecting any global.json):
+ Version:   2.1.811
+ Commit:    a9da00fd20
 
+Runtime Environment:
+ OS Name:     ubuntu
+ OS Version:  20.04
+ OS Platform: Linux
+ RID:         ubuntu.20.04-x64
+ Base Path:   /usr/share/dotnet/sdk/2.1.811/
+
+Host (useful for support):
+  Version: 2.1.23
+  Commit:  b61e1596d6
+
+.NET Core SDKs installed:
+  2.1.811 [/usr/share/dotnet/sdk]
+
+.NET Core runtimes installed:
+  Microsoft.AspNetCore.All 2.1.23 [/usr/share/dotnet/shared/Microsoft.AspNetCore.All]
+  Microsoft.AspNetCore.App 2.1.23 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 2.1.23 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+
+To install additional .NET Core runtimes or SDKs:
+  https://aka.ms/dotnet-download
+```
 
 ### Menjalankan contoh API yang dibuat menggunakan .NET Core.
