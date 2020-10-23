@@ -126,6 +126,83 @@ $ mkdir testwebapi
 
 $ cd testwebapi/ && unzip ../testwebapi.zip
 ```
+Sebelum menjalankan API tersebut, kita perlu mengganti ip `localhost` pada project menjadi ip public dari multipass dengan tujuan agar IP dapat diakses oleh PC client.
+Cara untuk mengganti ip-nya, kita perlu mengubah konfigurasi dari `launchSettings.json` yang letaknya ada di dalam folder `Properties`.
+
+```
+$ cd Properties/
+$ vim launchSettings.json
+```
+
+Maka akan muncul isi dari file `launchSettings.json`
+```
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false, 
+    "anonymousAuthentication": true, 
+    "iisExpress": {
+      "applicationUrl": "http://localhost:34678",
+      "sslPort": 44337
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "api/values",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "testwebapi": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/values",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
+```
+
+Lakukan perubahan pada tulisan `localhost` di bagian key `applicationUrl` menjadi ip ubuntu multipass Anda.
+```
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false, 
+    "anonymousAuthentication": true, 
+    "iisExpress": {
+      "applicationUrl": "http://localhost:34678",
+      "sslPort": 44337
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "api/values",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "testwebapi": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/values",
+      "applicationUrl": "https://192.168.64.7:5001;http://192.168.64.7:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
+```
+
+Setelah itu keluar dari editor `vim`.
 
 Setelah diekstrak, kita bisa jalankan project tersebut dengan menggunakan printah `run` pada dotnet.
 ```
