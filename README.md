@@ -6,6 +6,10 @@ Buat saya sendiri, dengan adanya service multipass ini, saya dapat membuat serve
 
 Untuk Penjelasan tentang multipass ada di [sini](https://multipass.run/)
 
+### Contoh deploy dan penggunaan multipass:
+1. [Install .NET Core](https://github.com/zayedelfasa/multipass-ubuntu/blob/main/MULTIPASS_DOTNETCORE.md).
+2. [Install ReactJs](https://github.com/zayedelfasa/multipass-ubuntu/blob/main/MULTIPASS_REACT.md).
+
 ### Download multipass: 
 - Windows https://multipass.run/download/windows
 - Mac https://multipass.run/download/macos
