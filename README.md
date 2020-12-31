@@ -4,6 +4,7 @@
 <div align="center">
 <h1>Easy Multipass<h1>
 </div>
+  
 # VMs Multipass Ubuntu untuk membuat server lokal secara instant
 
 Multipass adalah salah satu solusi mesin virtual server ubuntu dalam bentuk service yang dapat berjalan di atas sistem operasi. 
