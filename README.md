@@ -1,3 +1,9 @@
+<div align="center">
+<img src="https://assets.ubuntu.com/v1/c87ec87a-Multipass-header-option_crop.png" width="30%" height="30%" alt="bar"/>
+</div>
+<div align="center">
+<h1>Easy Multipass<h1>
+</div>
 # VMs Multipass Ubuntu untuk membuat server lokal secara instant
 
 Multipass adalah salah satu solusi mesin virtual server ubuntu dalam bentuk service yang dapat berjalan di atas sistem operasi. 
@@ -9,6 +15,7 @@ Untuk Penjelasan tentang multipass ada di [sini](https://multipass.run/)
 ### Contoh deploy dan penggunaan multipass:
 1. [Install .NET Core](https://github.com/zayedelfasa/multipass-ubuntu/blob/main/MULTIPASS_DOTNETCORE.md).
 2. [Install ReactJs](https://github.com/zayedelfasa/multipass-ubuntu/blob/main/MULTIPASS_REACT.md).
+3. [Install Open Lite Speed](https://github.com/zayedelfasa/multipass-ubuntu/blob/main/MULTIPASS_OLS.MD)
 
 ### Download multipass: 
 - Windows https://multipass.run/download/windows

@@ -1,7 +1,5 @@
 # Mencoba OPEN LITE SPEED di Multipass Ubuntu
 
-
-
 Kali ini kita akan mencoba untuk membangun sebuah web server bernama "Open Lite Speed" di dalam sebuah server Multipass Ubuntu. 
 
 Website resmi dari Open Lite Speed, bisa dilihat di [sini](https://openlitespeed.org).
@@ -56,13 +54,12 @@ Agar kita dapat masuk ke dalam web admin, kita perlu set username dan password-n
 ```
 $ sudo /usr/local/lsws/admin/misc/admpass.sh
 ```
+Contohnya seperti di bawah ini :
 <div align="center">
 <img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/multipass_ols/ols4.png" width="80%" height="80%" alt="bar"/>
 </div>
 
-Contohnya seperti di bawah ini :
-
-Setelah username dan pssword telah diisi, kita kembali ke halaman web admin kemudian masukkan username dan password yang telah kita set tadi. Contoh gambar seperti di bawah ini :
+Setelah username dan pssword telah diisi, kita kembali ke halaman web admin kemudian masukkan username dan password yang telah kita set tadi kemudian klik Login. Contoh gambar seperti di bawah ini :
 
 <div align="center">
 <img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/multipass_ols/ols2.png" width="80%" height="80%" alt="bar"/>
