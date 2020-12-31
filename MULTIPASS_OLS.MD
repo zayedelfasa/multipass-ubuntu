@@ -1,5 +1,7 @@
 # Mencoba OPEN LITE SPEED di Multipass Ubuntu
 
+
+
 Kali ini kita akan mencoba untuk membangun sebuah web server bernama "Open Lite Speed" di dalam sebuah server Multipass Ubuntu. 
 
 Website resmi dari Open Lite Speed, bisa dilihat di [sini](https://openlitespeed.org).
@@ -37,13 +39,16 @@ $ sudo /usr/local/lsws/bin/lswsctrl start
 setelah perintah di atas dijalankan, anda dapat melihat tampilannya admin di browser PC client dengan alamat : 
 
 http://[your-ip-ubuntu-multipass]:7088
-
+<div align="center">
+<img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/multipass_ols/ols3.png" width="80%" height="80%" alt="bar"/>
+</div>
 
 secara default, port web admin berada pada port 7088 dan port dari contoh web ada di 8088: 
 
 http://[your-ip-ubuntu-multipass]:8088
-
-
+<div align="center">
+<img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/multipass_ols/ols1.png" width="80%" height="80%" alt="bar"/>
+</div>
 
 ## Setting Username dan Password Admin
 
@@ -51,9 +56,16 @@ Agar kita dapat masuk ke dalam web admin, kita perlu set username dan password-n
 ```
 $ sudo /usr/local/lsws/admin/misc/admpass.sh
 ```
+<div align="center">
+<img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/multipass_ols/ols4.png" width="80%" height="80%" alt="bar"/>
+</div>
 
 Contohnya seperti di bawah ini :
 
 Setelah username dan pssword telah diisi, kita kembali ke halaman web admin kemudian masukkan username dan password yang telah kita set tadi. Contoh gambar seperti di bawah ini :
+
+<div align="center">
+<img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/multipass_ols/ols2.png" width="80%" height="80%" alt="bar"/>
+</div>
 
 Untuk mencoba project simple di-deploy pada Open Lite Speed, akan ditulis di bagian ke dua.

@@ -61,4 +61,5 @@ Untuk mencobanya, kita bisa langsung akses de dalam PC kita dengan cara akses IP
 <div>
 <img src="https://github.com/zayedelfasa/multipass-ubuntu/blob/main/multipass_react_sample/tes-1.png" width="50%" height="50%" alt="bar"/>
 </div>
+
 Sekian. Terima kasih.
