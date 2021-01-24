@@ -1,7 +1,5 @@
 <div align="center">
 <img src="https://assets.ubuntu.com/v1/c87ec87a-Multipass-header-option_crop.png" width="30%" height="30%" alt="bar"/>
-</div>
-<div align="center">
 <h1>Easy Multipass<h1>
 </div>
   
