@@ -12,9 +12,10 @@ Buat saya sendiri, dengan adanya service multipass ini, saya dapat membuat serve
 Untuk Penjelasan tentang multipass ada di [sini](https://multipass.run/)
 
 ### Contoh deploy dan penggunaan multipass:
-1. [Install .NET Core](https://github.com/zayedelfasa/multipass-ubuntu/blob/main/MULTIPASS_DOTNETCORE.md).
-2. [Install ReactJs](https://github.com/zayedelfasa/multipass-ubuntu/blob/main/MULTIPASS_REACT.md).
+1. [Install .NET Core](https://github.com/zayedelfasa/multipass-ubuntu/blob/main/MULTIPASS_DOTNETCORE.md)
+2. [Install ReactJs](https://github.com/zayedelfasa/multipass-ubuntu/blob/main/MULTIPASS_REACT.md)
 3. [Install Open Lite Speed](https://github.com/zayedelfasa/multipass-ubuntu/blob/main/MULTIPASS_OLS.MD)
+4. [Install MongoDB](https://github.com/zayedelfasa/multipass-ubuntu/blob/main/MULTIPASS_MONGOD.md)
 
 ### Download multipass: 
 - Windows https://multipass.run/download/windows
