@@ -90,3 +90,5 @@ Jan 23 22:17:39 mongod systemd[1]: Started MongoDB Database Server.
 ```
 
 Jika status `Active` bertuliskan `active (running)` maka mongodb telah berjalan dengan baik.
+
+Sekian, terima kasih.
