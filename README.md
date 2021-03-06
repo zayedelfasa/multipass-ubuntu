@@ -79,7 +79,6 @@ $ multipass delete ubuntu-riset
 
 Kemudian lanjutkan dengan : 
 
-
 ```
 $ multipass purge
 ```
